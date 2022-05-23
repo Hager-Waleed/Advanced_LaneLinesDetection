@@ -1,18 +1,3 @@
-from skimage.feature import hog
-from sklearn.svm import LinearSVC
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from scipy.ndimage.measurements import label
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
-%matplotlib inline
-from moviepy.editor import VideoFileClip
-from IPython.display import HTML
-import numpy as np
-import pickle
-import cv2
-import glob
-import time
 from Exatract_Features import *
 
 def find_cars(img, ystart, ystop, scale, cspace, hog_channel, svc, X_scaler, orient,
@@ -37,7 +22,7 @@ def find_cars(img, ystart, ystop, scale, cspace, hog_channel, svc, X_scaler, ori
         elif cspace == 'YCrCb':
             search_ctrans = cv2.cvtColor(search_img, cv2.COLOR_RGB2YCrCb)
     else:
-        search_ctrans = np.copy(image)
+        search_ctrans = np.copy(img)
 
     # Rescale image if not 1.0
     if scale != 1:
@@ -50,7 +35,7 @@ def find_cars(img, ystart, ystop, scale, cspace, hog_channel, svc, X_scaler, ori
         channel_2 = search_ctrans[:, :, 1]
         channel_3 = search_ctrans[:, :, 2]
     else:
-        channel_1 = ctrans_tosearch[:, :, hog_channel]
+        channel_1 = search_ctrans[:, :, hog_channel]
 
     # Define blocks
     nx_blocks = (channel_1.shape[1] // pix_per_cell) + 1  # -1
