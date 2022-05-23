@@ -8,18 +8,19 @@
 - OpenCV 3.x
 - Pickle (for storing the camera calibration matrix and distortion coefficients)
 - MoviePy (to process video files)
+- Skiimag
+- Scipy
+- Pickle
 
 ## 2. Pipeline
 The various steps invovled in the pipeline are as follows, each of these has also been discussed in more detail in the sub sections below:
 
-- Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
-- Apply a distortion correction to raw images.
+-Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier.
+- Finding cars using sliding-window technique and use your trained classifier to search for vehicles in images.
 - Apply a perspective transform to rectify image ("birds-eye view").
-- Use color transforms, gradients, etc., to create a thresholded binary image.
+- Run your pipeline on a video stream and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles
 - Detect lane pixels and fit to find the lane boundary.
-- Determine the curvature of the lane and vehicle position with respect to center.
-- Warp the detected lane boundaries back onto the original image.
-- Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
+- Estimate a bounding box for vehicles detected
 
 ## Useage Example 
 
