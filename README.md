@@ -26,8 +26,8 @@ The various steps invovled in the pipeline are as follows, each of these has als
 
 - Clone the repo
 - Open the Git Bach window in the folder that you cloned the repo 
-- Write this command  ./run.sh  'input video path''output video path' --debug  0/1
-  - if the debug mode = 1, then the output video will contain all pipline stages
+- After running the code the output of test-images will be just like this
+
   
 ![image](https://user-images.githubusercontent.com/74071911/169896623-d8797327-090c-4de6-827e-acbc4b26c2a8.png)
 
