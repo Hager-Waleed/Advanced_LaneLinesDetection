@@ -29,11 +29,7 @@ The various steps invovled in the pipeline are as follows, each of these has als
 - Write this command  ./run.sh  'input video path''output video path' --debug  0/1
   - if the debug mode = 1, then the output video will contain all pipline stages
   
-  ![image](https://user-images.githubusercontent.com/74071911/164306518-e362ba65-30f2-4976-87b0-ffdb0db29114.png)
+  ![image](![image](https://user-images.githubusercontent.com/60639509/169896280-53b6bbb1-27e5-451b-8511-f1211b99430e.png)
+)
 
 
-  - if the debug mode = 0, then the output video will contain lane lines detection only 
-  
-  ![image](https://user-images.githubusercontent.com/74071911/164306786-9454f5bc-ae8f-4a64-b089-f97030bfd9eb.png)
-
-  
