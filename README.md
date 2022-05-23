@@ -29,7 +29,7 @@ The various steps invovled in the pipeline are as follows, each of these has als
 - Write this command  ./run.sh  'input video path''output video path' --debug  0/1
   - if the debug mode = 1, then the output video will contain all pipline stages
   
-  ![image](![image](https://user-images.githubusercontent.com/60639509/169896280-53b6bbb1-27e5-451b-8511-f1211b99430e.png)
-)
+![image](https://user-images.githubusercontent.com/74071911/169896623-d8797327-090c-4de6-827e-acbc4b26c2a8.png)
+
 
 
